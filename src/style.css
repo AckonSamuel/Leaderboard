@@ -4,12 +4,11 @@
   box-sizing: border-box;
 }
 
-
-
 .grid-container {
   display: grid;
-  grid-template-areas: 'lead lead lead lead lead'
-  'score score score score input';
+  grid-template-areas:
+    'lead lead lead lead lead'
+    'score score score score input';
   width: 90%;
   height: auto;
   margin: auto;
@@ -17,8 +16,7 @@
 
 h1 {
   grid-area: lead;
-  font-style: bold;
-  font-size: 2.5em;
+  font-size: 50px;
   margin: 0.7em;
 }
 
@@ -26,8 +24,9 @@ h1 {
   grid-area: score;
   display: grid;
   width: 70%;
-  grid-template-areas: 'recent recent refresh'
-  'list list list';
+  grid-template-areas:
+    'recent recent refresh'
+    'list list list';
   margin: auto;
 }
 
@@ -37,6 +36,8 @@ h1 {
 
 .refresh {
   grid-area: refresh;
+  width: 70px;
+  margin-left: auto;
 }
 
 .contain-scores {
@@ -58,7 +59,7 @@ h1 {
   flex-direction: column;
   width: 70%;
   margin-right: auto;
-  margin-right: auto;
+  margin-left: auto;
   gap: 1em;
 }
 
@@ -72,11 +73,6 @@ form {
   width: 60px;
   padding: 5px;
   align-self: flex-end;
-}
-
-.refresh {
-  width: 70px;
-  margin-left: auto;
 }
 
 footer {
