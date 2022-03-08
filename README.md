@@ -10,7 +10,7 @@
 - Webpack
 ### Live Demo
 
-[Demo](/)
+[Demo](https://ackonsamuel.github.io/Leaderboard/)
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -34,9 +34,9 @@ after running `npm start` the website will be opened automatically on your defau
 
 👤 **Author1**
 
-- GitHub: [Levy Ukwishaka](https://github.com/AckonSamuel)
+- GitHub: [@AckonSamuel](https://github.com/AckonSamuel)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/samuel-ackon-882717190/)
-- Twitter: [Twitter](https://twitter.com/AckonSamuel2)
+- Twitter: [@AckonSamuel](https://twitter.com/AckonSamuel2)
 
 ## 🤝 Contributing
 
