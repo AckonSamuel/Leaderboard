@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { default: StylelintWebpackPlugin } = require('stylelint-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -9,7 +10,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.js'
+    }),
+    new StylelintWebpackPlugin({
+      files: path.join('src', '**/*.s?(a|c)ss'),
+      fix: true,
     }),
   ],
   mode: 'development',
@@ -39,6 +44,14 @@ module.exports = {
       {
         test: /\.xml$/i,
         use: ['xml-loader'],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        options: {
+          fix: true,
+        },
       },
     ],
   },
