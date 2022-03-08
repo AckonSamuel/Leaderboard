@@ -1,3 +1,84 @@
-.hello {
-    color: red;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'lead lead lead lead lead'
+    'score score score score input';
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+h1 {
+  grid-area: lead;
+  font-size: 50px;
+  margin: 0.7em;
+}
+
+.display-scores {
+  grid-area: score;
+  display: grid;
+  width: 70%;
+  grid-template-areas:
+    'recent recent refresh'
+    'list list list';
+  margin: auto;
+}
+
+.score-titles {
+  grid-area: recent;
+}
+
+.refresh {
+  grid-area: refresh;
+  width: 70px;
+  margin-left: auto;
+}
+
+.contain-scores {
+  grid-area: list;
+  width: 100%;
+  list-style: none;
+  border: 1px solid black;
+  margin-top: 15px;
+}
+
+.contain-scores li {
+  padding: 3px;
+  border-bottom: 1px solid #aaa;
+}
+
+.add-score {
+  grid-area: input;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.submit {
+  width: 60px;
+  padding: 5px;
+  align-self: flex-end;
+}
+
+footer {
+  margin-top: 45vh;
+  border: 1px solid #aaa;
+  width: 100%;
+  height: 40px;
+  background: #aaa;
+}
