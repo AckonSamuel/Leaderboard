@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 0.5px solid blue;
 }
 
 
@@ -20,7 +19,7 @@ h1 {
   grid-area: lead;
   font-style: bold;
   font-size: 2.5em;
-  margin: 0.5em;
+  margin: 0.7em;
 }
 
 .display-scores {
@@ -29,6 +28,7 @@ h1 {
   width: 70%;
   grid-template-areas: 'recent recent refresh'
   'list list list';
+  margin: auto;
 }
 
 .score-titles {
@@ -42,16 +42,39 @@ h1 {
 .contain-scores {
   grid-area: list;
   width: 100%;
+  list-style: none;
+  border: 1px solid black;
+  margin-top: 15px;
+}
+
+.contain-scores li {
+  padding: 3px;
+  border-bottom: 1px solid #aaa;
 }
 
 .add-score {
   grid-area: input;
   display: flex;
   flex-direction: column;
+  width: 70%;
+  margin-right: auto;
+  margin-right: auto;
+  gap: 1em;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  gap: 1em;
 }
 
+.submit {
+  width: 60px;
+  padding: 5px;
+  align-self: flex-end;
+}
+
+.refresh {
+  width: 70px;
+  margin-left: auto;
+}
