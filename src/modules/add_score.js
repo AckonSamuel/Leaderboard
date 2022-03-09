@@ -1,12 +1,12 @@
 import { url } from './initialize_game.js';
 
-const game_id = 'WAtaGU0naxzTYhJLb';
-const add_score = async (name, score) => {
-    const response = await fetch(`${url}/${game_id}/scores`, {
+const game_id = 'hel-lo';
+const add_score = async (name, points) => {
+    const response = await fetch(`${url}/${game_id}/scores/`, {
         method: 'POST',
         body: JSON.stringify({
             user: name,
-            score,
+            score: points,
         }),
         headers: {
             'Content-type': 'application/json; charset=UTF-8',
