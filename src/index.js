@@ -22,6 +22,9 @@ form.addEventListener('submit', () => {
 
 const refresh = document.querySelector('.refresh');
  
-refresh.addEventListener('click', get_result);
+refresh.addEventListener('click', () => {
+  window.location.reload();
+  get_result();
+})
 
 window.onload = () => get_result();
