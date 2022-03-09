@@ -10,4 +10,4 @@ const initialize_game = async (game_name) => {
     return response.json();
 };
 
-export { url, create_game };
+export { url, initialize_game };
