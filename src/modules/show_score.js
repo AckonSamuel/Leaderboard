@@ -8,7 +8,6 @@ const fill = (data) => {
         const li = document.createElement('li');
         li.innerHTML = `${m.user} : ${m.score}`;
         contain_scores.appendChild(li);
-        console.log(m.user);
     });
 };
 

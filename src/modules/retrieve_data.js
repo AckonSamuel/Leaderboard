@@ -5,7 +5,6 @@ const get_result = async () => {
     const data = await fetch(url);
     const obj = await data.json();
     fill(obj.result);
-    console.log(obj.result)
 };
 
 export default get_result;

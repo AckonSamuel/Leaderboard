@@ -11,7 +11,10 @@ initialize_game('God of War');
 
 submit.addEventListener('click', () => {
   if( user_name.value != '' && user_score.value != ''){
-  add_score(user_name.value, user_score.value);}
+  add_score(user_name.value, user_score.value);
+  user_name.value = '';
+  user_score.value = '';
+}
   console.log("worked");
 });
 
