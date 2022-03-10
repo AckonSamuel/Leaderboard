@@ -5,7 +5,6 @@
 }
 
 body {
-  color: #fff;
   font-family: 'VT323', monospace;
   background: url('../images/backimg.jpg') no-repeat;
   background-size: cover;
@@ -28,6 +27,7 @@ h1 {
   grid-area: lead;
   font-size: 50px;
   margin: 0.7em;
+  color: rgb(50, 233, 50)
 }
 
 .display-scores {
