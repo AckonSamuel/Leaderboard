@@ -1,10 +1,10 @@
 const fill = (data) => {
-  const containScores = document.querySelector('.containScores');
-  if (containScores.firstChild !== null) {
-    while (containScores.firstChild) {
-      containScores.removeChild(containScores.firstChild);
-    }
+  const containScores = document.querySelector('.contain-scores');
+
+  while (containScores.firstChild) {
+    containScores.removeChild(containScores.firstChild);
   }
+
   data.forEach((m) => {
     const li = document.createElement('li');
     li.innerHTML = `${m.user} : ${m.score}`;
