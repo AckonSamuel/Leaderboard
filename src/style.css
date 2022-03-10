@@ -8,6 +8,7 @@ body {
   font-family: 'VT323', monospace;
   background: url('../images/backimg.jpg') no-repeat;
   background-size: cover;
+  line-height: 1.5em;
 }
 
 .grid-container {
@@ -44,10 +45,16 @@ h1 {
   grid-area: recent;
 }
 
+h2 {
+  color:rgb(197, 9, 239);
+}
+
 .refresh {
   grid-area: refresh;
   width: 70px;
   margin-left: auto;
+  color: #fff;
+  background-color: blueviolet;
 }
 
 .contain-scores {
@@ -81,6 +88,10 @@ h1 {
   gap: 1em;
 }
 
+.add-score h2 {
+ color: rgb(255, 205, 5);
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -91,7 +102,8 @@ form {
   width: 60px;
   padding: 5px;
   align-self: flex-end;
-  background-color: greenyellow;
+  background-color: rgb(255, 205, 5);
+  color: white;
 }
 
 footer {
