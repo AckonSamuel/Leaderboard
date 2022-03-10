@@ -5,8 +5,9 @@
 }
 
 body {
-  background: #29254f;
   color: #fff;
+  font-family: 'VT323', monospace;
+  background: #aaa;
 }
 
 .grid-container {
@@ -15,8 +16,11 @@ body {
     'lead lead lead lead lead'
     'score score score score input';
   width: 90%;
-  height: auto;
   margin: auto;
+  margin-top: 4em;
+  padding: 1em;
+  border: 1px solid #aaa;
+  background: #29254f;
 }
 
 h1 {
@@ -49,13 +53,16 @@ h1 {
   grid-area: list;
   width: 100%;
   list-style: none;
-  border: 1px solid black;
+  border: 1px solid #aaa;
   margin-top: 15px;
+  height: 350px;
+  overflow: auto;
 }
 
 .contain-scores li {
   padding: 3px;
   border-bottom: 1px solid #aaa;
+  color: gold;
 }
 
 .add-score {
