@@ -69,7 +69,7 @@ form {
   gap: 1em;
 }
 
-.submit {
+#submit {
   width: 60px;
   padding: 5px;
   align-self: flex-end;

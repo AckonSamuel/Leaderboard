@@ -25,6 +25,7 @@ A Web Browser (preferably Google Chrome)
 ### Setup
 
 - Clone the GitHub Repository
+- Create a directory in the root directory and name it "dist".
 - run this commands in your terminal:
      - `npm install`
      - `npm run build`
