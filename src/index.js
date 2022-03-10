@@ -10,15 +10,15 @@ const submit = document.querySelector('#submit');
 initializeGame('God of War');
 
 submit.addEventListener('click', () => {
-  if( userName.value != '' && userScore.value != ''){
-  addScore(userName.value, userScore.value);
-  userName.value = '';
-  userScore.value = '';
-}
+  if (userName.value !== '' && userScore.value !== '') {
+    addScore(userName.value, userScore.value);
+    userName.value = '';
+    userScore.value = '';
+  }
   console.log("worked");
 });
 
- 
+
 refresh.addEventListener('click', () => {
   window.location.reload();
 })

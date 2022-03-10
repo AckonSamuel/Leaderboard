@@ -11,8 +11,8 @@ const addScore = async (name, points) => {
         headers: {
             'Content-type': 'application/json; charset=UTF-8',
         },
-     });
-     return response.json();
+    });
+    return response.json();
 };
 
 export default addScore;

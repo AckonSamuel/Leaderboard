@@ -1,7 +1,7 @@
 
 const fill = (data) => {
     const contain_scores = document.querySelector('.contain-scores');
-    while(contain_scores.firstChild){
+    while (contain_scores.firstChild) {
         contain_scores.removeChild(contain_scores.firstChild);
     };
     data.forEach((m) => {

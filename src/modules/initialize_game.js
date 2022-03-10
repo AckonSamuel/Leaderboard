@@ -2,7 +2,7 @@ const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/game
 const initializeGame = async (game_name) => {
     const response = await fetch(`${url}/`, {
         method: 'POST',
-        body: JSON.stringify({name: game_name }),
+        body: JSON.stringify({ name: game_name }),
         headers: {
             'Content-Type': 'application/json; charset=UTF-8',
         },
