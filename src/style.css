@@ -7,7 +7,8 @@
 body {
   color: #fff;
   font-family: 'VT323', monospace;
-  background: #aaa;
+  background: url('../images/backimg.jpg') no-repeat;
+  background-size: cover;
 }
 
 .grid-container {
@@ -20,7 +21,7 @@ body {
   margin-top: 4em;
   padding: 1em;
   border: 1px solid #aaa;
-  background: #29254f;
+  background: url('../images/download.jpg');
 }
 
 h1 {
