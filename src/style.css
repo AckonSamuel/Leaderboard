@@ -54,15 +54,20 @@ h1 {
   grid-area: list;
   width: 100%;
   list-style: none;
-  border: 1px solid #aaa;
   margin-top: 15px;
   height: 350px;
   overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+
+.contain-scores::-webkit-scrollbar {
+  display: none;
+} 
 
 .contain-scores li {
   padding: 3px;
-  border-bottom: 1px solid #aaa;
+  /* border-bottom: 1px solid #aaa; */
   color: gold;
 }
 
@@ -86,6 +91,7 @@ form {
   width: 60px;
   padding: 5px;
   align-self: flex-end;
+  background-color: greenyellow;
 }
 
 footer {
