@@ -1,14 +1,13 @@
-
 const fill = (data) => {
-    const contain_scores = document.querySelector('.contain-scores');
-    while (contain_scores.firstChild) {
-        contain_scores.removeChild(contain_scores.firstChild);
-    };
-    data.forEach((m) => {
-        const li = document.createElement('li');
-        li.innerHTML = `${m.user} : ${m.score}`;
-        contain_scores.appendChild(li);
-    });
+  const containScores = document.querySelector('.containScores');
+  while (containScores.firstChild) {
+    containScores.removeChild(containScores.firstChild);
+  }
+  data.forEach((m) => {
+    const li = document.createElement('li');
+    li.innerHTML = `${m.user} : ${m.score}`;
+    containScores.appendChild(li);
+  });
 };
 
 export default fill;

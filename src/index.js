@@ -15,12 +15,10 @@ submit.addEventListener('click', () => {
     userName.value = '';
     userScore.value = '';
   }
-  console.log("worked");
 });
-
 
 refresh.addEventListener('click', () => {
   window.location.reload();
-})
+});
 
 window.onload = () => getResult();
