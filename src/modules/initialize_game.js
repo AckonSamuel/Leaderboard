@@ -1,5 +1,5 @@
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
-const initialize_game = async (game_name) => {
+const initializeGame = async (game_name) => {
     const response = await fetch(`${url}/`, {
         method: 'POST',
         body: JSON.stringify({name: game_name }),
@@ -10,4 +10,4 @@ const initialize_game = async (game_name) => {
     return response.json();
 };
 
-export { url, initialize_game };
+export { url, initializeGame };

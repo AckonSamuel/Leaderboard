@@ -1,7 +1,7 @@
-import { url } from './initialize_game.js';
+import { url } from './initializeGame.js';
 
 const game_id = 'hel-lo';
-const add_score = async (name, points) => {
+const addScore = async (name, points) => {
     const response = await fetch(`${url}/${game_id}/scores/`, {
         method: 'POST',
         body: JSON.stringify({
@@ -15,4 +15,4 @@ const add_score = async (name, points) => {
      return response.json();
 };
 
-export default add_score;
+export default addScore;

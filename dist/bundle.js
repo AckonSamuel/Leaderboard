@@ -530,9 +530,9 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/modules/add_score.js":
+/***/ "./src/modules/addScore.js":
 /*!**********************************!*\
-  !*** ./src/modules/add_score.js ***!
+  !*** ./src/modules/addScore.js ***!
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -540,12 +540,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _initialize_game_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initialize_game.js */ "./src/modules/initialize_game.js");
+/* harmony import */ var _initializeGame_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initializeGame.js */ "./src/modules/initializeGame.js");
 
 
 const game_id = 'hel-lo';
-const add_score = async (name, points) => {
-    const response = await fetch(`${_initialize_game_js__WEBPACK_IMPORTED_MODULE_0__.url}/${game_id}/scores/`, {
+const addScore = async (name, points) => {
+    const response = await fetch(`${_initializeGame_js__WEBPACK_IMPORTED_MODULE_0__.url}/${game_id}/scores/`, {
         method: 'POST',
         body: JSON.stringify({
             user: name,
@@ -558,23 +558,23 @@ const add_score = async (name, points) => {
      return response.json();
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (add_score);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addScore);
 
 /***/ }),
 
-/***/ "./src/modules/initialize_game.js":
+/***/ "./src/modules/initializeGame.js":
 /*!****************************************!*\
-  !*** ./src/modules/initialize_game.js ***!
+  !*** ./src/modules/initializeGame.js ***!
   \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "initialize_game": () => (/* binding */ initialize_game),
+/* harmony export */   "initializeGame": () => (/* binding */ initializeGame),
 /* harmony export */   "url": () => (/* binding */ url)
 /* harmony export */ });
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
-const initialize_game = async (game_name) => {
+const initializeGame = async (game_name) => {
     const response = await fetch(`${url}/`, {
         method: 'POST',
         body: JSON.stringify({name: game_name }),
@@ -602,14 +602,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _show_score_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./show_score.js */ "./src/modules/show_score.js");
 
 
-const get_result = async () => {
+const getResult = async () => {
     const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hel-lo/scores/';
     const data = await fetch(url);
     const obj = await data.json();
     (0,_show_score_js__WEBPACK_IMPORTED_MODULE_0__["default"])(obj.result);
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (get_result);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getResult);
 
 /***/ }),
 
@@ -716,23 +716,23 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _modules_add_score_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/add_score.js */ "./src/modules/add_score.js");
-/* harmony import */ var _modules_initialize_game_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/initialize_game.js */ "./src/modules/initialize_game.js");
+/* harmony import */ var _modules_addScore_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/addScore.js */ "./src/modules/addScore.js");
+/* harmony import */ var _modules_initializeGame_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/initializeGame.js */ "./src/modules/initializeGame.js");
 /* harmony import */ var _modules_retrieve_data_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/retrieve_data.js */ "./src/modules/retrieve_data.js");
 
 
 
 
 
-const user_name = document.getElementById('name');
-const user_score = document.getElementById('score');
+const userName = document.getElementById('name');
+const userScore = document.getElementById('score');
 const refresh = document.querySelector('.refresh');
 const submit = document.querySelector('#submit');
-(0,_modules_initialize_game_js__WEBPACK_IMPORTED_MODULE_2__.initialize_game)('God of War');
+(0,_modules_initializeGame_js__WEBPACK_IMPORTED_MODULE_2__.initializeGame)('God of War');
 
 submit.addEventListener('click', () => {
-  if( user_name.value != '' && user_score.value != ''){
-  (0,_modules_add_score_js__WEBPACK_IMPORTED_MODULE_1__["default"])(user_name.value, user_score.value);}
+  if( userName.value != '' && userScore.value != ''){
+  (0,_modules_addScore_js__WEBPACK_IMPORTED_MODULE_1__["default"])(userName.value, userScore.value);}
   console.log("worked");
 });
 
