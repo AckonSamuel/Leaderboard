@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #29254f;
+  color: #fff;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
