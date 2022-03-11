@@ -17,7 +17,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    assetModuleFilename: 'images/[name].[ext]'
+    assetModuleFilename: 'images/[name].[ext]',
   },
   module: {
     rules: [
