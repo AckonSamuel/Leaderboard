@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Leaderboard
-<img src="./images/Screenshot%202022-03-08%20154506.png" alt="Screenshot">
+<img src="./images/Screenshot%202022-03-11%20054908.png" alt="Screenshot">
 
 ## Description
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
@@ -11,9 +11,6 @@ The leaderboard website displays scores submitted by different players. It also 
 - CSS
 - Javascript
 - Webpack
-### Live Demo
-
-[Demo](https://ackonsamuel.github.io/Leaderboard/)
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
