@@ -28,7 +28,7 @@ h1 {
   grid-area: lead;
   font-size: 50px;
   margin: 0.7em;
-  color: rgb(50, 233, 50)
+  color: rgb(50, 233, 50);
 }
 
 .display-scores {
@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-  color:rgb(197, 9, 239);
+  color: rgb(197, 9, 239);
 }
 
 .refresh {
@@ -70,11 +70,10 @@ h2 {
 
 .contain-scores::-webkit-scrollbar {
   display: none;
-} 
+}
 
 .contain-scores li {
   padding: 3px;
-  /* border-bottom: 1px solid #aaa; */
   color: gold;
 }
 
@@ -89,7 +88,7 @@ h2 {
 }
 
 .add-score h2 {
- color: rgb(255, 205, 5);
+  color: rgb(255, 205, 5);
 }
 
 form {
