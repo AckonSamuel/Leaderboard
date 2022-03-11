@@ -12,8 +12,6 @@ The leaderboard website displays scores submitted by different players. It also 
 - Javascript
 - Webpack
 ### Live Demo
-
-[Demo](https://ackonsamuel.github.io/Leaderboard/)
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
